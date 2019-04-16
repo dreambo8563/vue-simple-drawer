@@ -1,17 +1,29 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <button @click="close">toggle</button>
+    <Drawer @close="close" align="left" :closeable="true">
+      <div v-if="open">content here</div>
+    </Drawer>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import Drawer from "@/components/Drawer";
 
 export default {
   name: "app",
+  data() {
+    return {
+      open: true
+    };
+  },
   components: {
-    HelloWorld
+    Drawer
+  },
+  methods: {
+    close() {
+      this.open = !this.open;
+    }
   }
 };
 </script>
