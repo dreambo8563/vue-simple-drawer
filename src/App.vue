@@ -9,7 +9,7 @@
 
 <script>
 import Drawer from "@/components/Drawer";
-
+import "./demo.scss";
 export default {
   name: "app",
   data() {
