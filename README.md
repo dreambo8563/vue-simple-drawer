@@ -2,44 +2,60 @@
 
 # vue-simple-drawer
 
-## Project setup
+## Install
 
 ```
-npm install
+npm install vue-simple-drawer --save
 ```
 
-### Compiles and hot-reloads for development
+### Quick Start
 
+```js
+<template>
+  <div id="app">
+    <button @click="close">toggle</button>
+    <Drawer @close="close" align="left" :closeable="true">
+      <div v-if="open">content here</div>
+    </Drawer>
+  </div>
+</template>
+
+<script>
+import Drawer from "vue-simple-drawer"
+export default {
+  name: "app",
+  data() {
+    return {
+      open: true
+    }
+  },
+  components: {
+    Drawer
+  },
+  methods: {
+    close() {
+      this.open = !this.open
+    }
+  }
+}
+</script>
 ```
-npm run serve
-```
 
-### Compiles and minifies for production
+### Prop Types
 
-```
-npm run build
-```
+| Property  | Type    | Required? | Description                                                                           |
+| :-------- | :------ | :-------- | :------------------------------------------------------------------------------------ |
+| align     | String  |           | One of "left", "up", "right", "down", default is 'right'. the location of the drawer. |
+| closeable | Boolean |           | If show the x - close button                                                          |
 
-### Run your tests
+### Events
 
-```
-npm run test
-```
+| Event | Params | Required? | Description                                          |
+| :---- | :----- | :-------- | :--------------------------------------------------- |
+| close | None   |           | will be triggered when user click the x close button |  |
 
-### Lints and fixes files
+### Slot
 
-```
-npm run lint
-```
-
-### Run your unit tests
-
-```
-npm run test:unit
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).
-
-# vue-simple-drawer
+| Slot Name | Description                                                            |
+| :-------- | ---------------------------------------------------------------------- |
+| default   | the content display in the drawer which can show/hide the draw by v-if |
