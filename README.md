@@ -2,7 +2,7 @@
 
 # vue-simple-drawer
 
-## Project setup
+## Install
 
 ```
 npm install
