@@ -13,8 +13,8 @@ npm install vue-simple-drawer --save
 ```js
 <template>
   <div id="app">
-    <button @click="close">toggle</button>
-    <Drawer @close="close" align="left" :closeable="true">
+    <button @click="toggle">toggle</button>
+    <Drawer @close="toggle" align="left" :closeable="true">
       <div v-if="open">content here</div>
     </Drawer>
   </div>
@@ -33,7 +33,7 @@ export default {
     Drawer
   },
   methods: {
-    close() {
+    toggle() {
       this.open = !this.open
     }
   }
