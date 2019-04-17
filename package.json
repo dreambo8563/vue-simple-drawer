@@ -1,14 +1,14 @@
 {
   "name": "vue-simple-drawer",
-  "version": "0.1.1",
+  "version": "0.1.6",
   "author": "dreambo8563",
-  "main": "dist/vue-simple-drawer.min.js",
+  "main": "dist/vue-simple-drawer.umd.min.js",
   "private": false,
   "description": "A tiny Drawer component for vue",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target wc --name vue-simple-drawer src/components/Drawer/index.vue",
-    "test": "vue-cli-service build --target wc --name vue-simple-drawer src/components/Drawer/index.vue",
+    "build": "vue-cli-service build --target lib --name vue-simple-drawer src/Drawer/index.js",
+    "test": "vue-cli-service build --target wc --name vue-simple-drawer src/Drawer/index.vue",
     "pages": "vue-cli-service build --dest docs",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit",
