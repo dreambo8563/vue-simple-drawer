@@ -5,8 +5,7 @@
   // default style
   padding: 20px;
   color: white;
-  background: rgba(51, 51, 51, 1);
-  box-shadow: 20px 12px 32px -3px rgba(0, 0, 0, 0.93);
+  background: $--simple-drawer-bg-color;
   // common
   position: fixed;
   overflow: auto;
@@ -43,8 +42,8 @@
   .close-btn {
     // position: relative;
     // margin: auto;
-    width: $close-width;
-    height: $close-width;
+    width: $--simple-drawer-close-width;
+    height: $--simple-drawer-close-width;
     // margin-top: 100px;
     // cursor: pointer;
     position: absolute;
@@ -58,10 +57,10 @@
     user-select: none;
     .leftright {
       height: 4px;
-      width: $close-width;
+      width: $--simple-drawer-close-width;
       position: absolute;
-      margin-top: $close-width/2;
-      background-color: $softorange;
+      margin-top: $--simple-drawer-close-width/2;
+      background-color: $--simple-drawer-softorange;
       border-radius: 2px;
       transform: rotate(45deg);
       transition: all 0.3s ease-in;
@@ -69,10 +68,10 @@
 
     .rightleft {
       height: 4px;
-      width: $close-width;
+      width: $--simple-drawer-close-width;
       position: absolute;
-      margin-top: $close-width/2;
-      background-color: $softorange;
+      margin-top: $--simple-drawer-close-width/2;
+      background-color: $--simple-drawer-softorange;
       border-radius: 2px;
       transform: rotate(-45deg);
       transition: all 0.3s ease-in;
@@ -84,11 +83,11 @@
 
     &:hover .leftright {
       transform: rotate(-45deg);
-      background-color: $tomatored;
+      background-color: $--simple-drawer-tomatored;
     }
     &:hover .rightleft {
       transform: rotate(45deg);
-      background-color: $tomatored;
+      background-color: $--simple-drawer-tomatored;
     }
   }
 }

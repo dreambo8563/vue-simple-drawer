@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import Drawer from "@/Drawer";
+import Drawer from "@/index.vue";
 import "./demo.scss";
 export default {
   name: "app",

@@ -4,9 +4,9 @@
 
 ## TODO
 
-- [ ] remove shadow for default style
+- [x] remove shadow for default style
 - [ ] add cover layer option
-- [ ] rename the scss vars
+- [x] rename the scss vars
 - [ ] nest drawer?
 
 ## Install
