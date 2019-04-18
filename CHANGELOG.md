@@ -1,3 +1,13 @@
+<a name="1.0.2"></a>
+## [1.0.2](https://github.com/dreambo8563/vue-simple-drawer/compare/v1.0.1...v1.0.2) (2019-04-18)
+
+
+### Features
+
+* **maskClosable:** add prop ([464f0d3](https://github.com/dreambo8563/vue-simple-drawer/commit/464f0d3))
+
+
+
 <a name="1.0.1"></a>
 ## [1.0.1](https://github.com/dreambo8563/vue-simple-drawer/compare/v0.1.9...v1.0.1) (2019-04-18)
 
