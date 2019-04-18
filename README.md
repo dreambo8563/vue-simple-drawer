@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/dreambo8563/vue-simple-drawer.svg?branch=master)](https://travis-ci.org/dreambo8563/vue-simple-drawer)
+[![Build Status](https://travis-ci.org/dreambo8563/vue-simple-drawer.svg?branch=master)](https://travis-ci.org/dreambo8563/vue-simple-drawer) [![Greenkeeper badge](https://badges.greenkeeper.io/dreambo8563/vue-simple-drawer.svg)](https://greenkeeper.io/)
 
 # vue-simple-drawer
 
