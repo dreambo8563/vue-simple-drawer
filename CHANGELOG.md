@@ -1,5 +1,15 @@
+<a name="1.0.1"></a>
+## [1.0.1](https://github.com/dreambo8563/vue-simple-drawer/compare/v0.1.9...v1.0.1) (2019-04-18)
+
+
+### Features
+
+* **1.0.0:** nest drawer and update docs ([2416e31](https://github.com/dreambo8563/vue-simple-drawer/commit/2416e31))
+
+
+
 <a name="0.1.9"></a>
-## 0.1.9 (2019-04-18)
+## [0.1.9](https://github.com/dreambo8563/vue-simple-drawer/compare/4e602b0...v0.1.9) (2019-04-18)
 
 
 ### Bug Fixes
