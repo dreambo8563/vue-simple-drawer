@@ -18,7 +18,7 @@
       </div>
     </transition>
     <transition name="fade" mode="out-in">
-      <div v-if="$slots.default" :class="{ mask }"></div>
+      <div @click="onMask" v-if="$slots.default" :class="{ mask }"></div>
     </transition>
   </div>
 </template>
@@ -40,11 +40,20 @@ export default {
     mask: {
       type: Boolean,
       default: true
+    },
+    maskClosable: {
+      type: Boolean,
+      default: false
     }
   },
   methods: {
     close() {
       this.$emit("close");
+    },
+    onMask() {
+      if (this.maskClosable) {
+        this.close();
+      }
     }
   },
   computed: {
