@@ -1,4 +1,7 @@
 [![Build Status](https://travis-ci.org/dreambo8563/vue-simple-drawer.svg?branch=master)](https://travis-ci.org/dreambo8563/vue-simple-drawer) [![Greenkeeper badge](https://badges.greenkeeper.io/dreambo8563/vue-simple-drawer.svg)](https://greenkeeper.io/)
+[![Known Vulnerabilities](https://snyk.io/test/github/dreambo8563/vue-simple-drawer/badge.svg?targetFile=package.json)](https://snyk.io/test/github/dreambo8563/vue-simple-drawer?targetFile=package.json)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![npm](https://img.shields.io/npm/dt/vue-simple-drawer.svg?style=flat)
 
 # vue-simple-drawer
 
