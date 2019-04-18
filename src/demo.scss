@@ -1,6 +1,6 @@
 // @import "src/components/Drawer/_animation.scss";
 
 // @import "src/components/Drawer/_variable.scss";
-$close-width: 28px;
+$--simple-drawer-close-width: 28px;
 
-@import "src/Drawer/_style.scss";
+@import "index";
