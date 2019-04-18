@@ -56,11 +56,12 @@ export default {
 
 ### Prop Types
 
-| Property  | Type    | Required? | Description                                                                           |
-| :-------- | :------ | :-------- | :------------------------------------------------------------------------------------ |
-| align     | String  |           | One of "left", "up", "right", "down", default is 'right'. the location of the drawer. |
-| closeable | Boolean |           | show the x - close button, default true                                               |
-| mask      | Boolean |           | show the mask layer - close button, default true                                      |
+| Property     | Type    | Required? | Description                                                                           |
+| :----------- | :------ | :-------- | :------------------------------------------------------------------------------------ |
+| align        | String  |           | One of "left", "up", "right", "down", default is 'right'. the location of the drawer. |
+| closeable    | Boolean |           | show the x - close button, default true                                               |
+| mask         | Boolean |           | show the mask layer - close button, default true                                      |
+| maskClosable | Boolean |           | emit 'close' event when click on mask layer, default: false                           |
 
 ### Events
 
@@ -143,9 +144,10 @@ import "./demo.scss"
 
 - \$--simple-drawer-bg-color
 
-
 ## License
+
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fdreambo8563%2Fvue-simple-drawer.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fdreambo8563%2Fvue-simple-drawer?ref=badge_large)
+
 ## Contributors
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
