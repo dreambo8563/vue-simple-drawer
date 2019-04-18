@@ -91,3 +91,16 @@
     }
   }
 }
+.mask {
+  &::before {
+    content: "";
+    position: absolute;
+    background: grey;
+    opacity: 0.5;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    z-index: 98;
+  }
+}

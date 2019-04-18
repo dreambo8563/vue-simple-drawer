@@ -1,21 +1,26 @@
 <template>
-  <transition
-    appear
-    :enter-active-class="alignInCls"
-    :leave-active-class="alignOutCls"
-  >
-    <div
-      :class="{ closeable, [align.toLowerCase()]: true }"
-      v-if="$slots.default"
-      class="vue-simple-drawer"
+  <div>
+    <transition
+      :enter-active-class="alignInCls"
+      :leave-active-class="alignOutCls"
     >
-      <div @click="close" v-if="closeable" class="close-btn">
-        <div class="leftright"></div>
-        <div class="rightleft"></div>
+      <div
+        key="content"
+        :class="{ closeable, [align.toLowerCase()]: true }"
+        v-if="$slots.default"
+        class="vue-simple-drawer cover"
+      >
+        <div @click="close" v-if="closeable" class="close-btn">
+          <div class="leftright"></div>
+          <div class="rightleft"></div>
+        </div>
+        <slot></slot>
       </div>
-      <slot></slot>
-    </div>
-  </transition>
+    </transition>
+    <transition name="fade" mode="out-in">
+      <div v-if="$slots.default" :class="{ mask }"></div>
+    </transition>
+  </div>
 </template>
 <script>
 export default {
@@ -30,7 +35,11 @@ export default {
     },
     closeable: {
       type: Boolean,
-      default: false
+      default: true
+    },
+    mask: {
+      type: Boolean,
+      default: true
     }
   },
   methods: {

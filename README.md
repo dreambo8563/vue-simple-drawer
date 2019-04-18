@@ -5,7 +5,7 @@
 ## TODO
 
 - [x] remove shadow for default style
-- [ ] add cover layer option
+- [x] add cover layer option
 - [x] rename the scss vars
 - [ ] nest drawer?
 
@@ -53,7 +53,8 @@ export default {
 | Property  | Type    | Required? | Description                                                                           |
 | :-------- | :------ | :-------- | :------------------------------------------------------------------------------------ |
 | align     | String  |           | One of "left", "up", "right", "down", default is 'right'. the location of the drawer. |
-| closeable | Boolean |           | If show the x - close button                                                          |
+| closeable | Boolean |           | show the x - close button, default true                                               |
+| mask      | Boolean |           | show the mask layer - close button, default true                                      |
 
 ### Events
 
