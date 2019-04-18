@@ -2,6 +2,7 @@
 [![Known Vulnerabilities](https://snyk.io/test/github/dreambo8563/vue-simple-drawer/badge.svg?targetFile=package.json)](https://snyk.io/test/github/dreambo8563/vue-simple-drawer?targetFile=package.json)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![npm](https://img.shields.io/npm/dt/vue-simple-drawer.svg?style=flat)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fdreambo8563%2Fvue-simple-drawer.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fdreambo8563%2Fvue-simple-drawer?ref=badge_shield)
 
 # vue-simple-drawer
 
@@ -139,3 +140,7 @@ import "./demo.scss"
 **drawer background**
 
 - \$--simple-drawer-bg-color
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fdreambo8563%2Fvue-simple-drawer.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fdreambo8563%2Fvue-simple-drawer?ref=badge_large)
