@@ -24,7 +24,17 @@
 
     <button @click="toggle">Open/Close</button>
     <Drawer @close="toggle" :align="align" :closeable="true">
-      <div v-if="open">content here</div>
+      <div v-if="open">
+        <span @click="innerOpen = true">
+          content here content here content here content here content here
+          content here content here
+        </span>
+        <Drawer @close="innerOpen = false" :align="align" :closeable="true">
+          <div v-if="innerOpen">
+            content here content here content here
+          </div>
+        </Drawer>
+      </div>
     </Drawer>
   </div>
 </template>
@@ -37,6 +47,7 @@ export default {
   data() {
     return {
       open: false,
+      innerOpen: false,
       align: "left"
     };
   },

@@ -7,7 +7,7 @@
 - [x] remove shadow for default style
 - [x] add cover layer option
 - [x] rename the scss vars
-- [ ] nest drawer?
+- [x] nest drawer?
 
 ## Install
 
@@ -67,3 +67,72 @@ export default {
 | Slot Name | Description                                                            |
 | :-------- | ---------------------------------------------------------------------- |
 | default   | the content display in the drawer which can show/hide the draw by v-if |
+
+### Advance Guide
+
+#### Nest Drawer
+
+```js
+   <button @click="toggle">Open/Close</button>
+    <Drawer @close="toggle" :align="align" :closeable="true">
+      <div v-if="open">
+        <span @click="innerOpen=true">
+          content here
+          content here
+          content here
+          content here
+          content here
+          content here
+          content here
+        </span>
+        <Drawer @close="innerOpen=false" :align="align" :closeable="true">
+          <div v-if="innerOpen">
+            content here
+            content here
+            content here
+          </div>
+        </Drawer>
+      </div>
+    </Drawer>
+
+    ...
+
+      data() {
+        return {
+          open: false,
+          innerOpen: false,
+          align: "left"
+        };
+      },
+```
+
+#### Customized Theme
+
+- In your customized scss file (demo.scss)
+
+```scss
+$--simple-drawer-close-width: 50px;
+@import "~vue-simple-drawer/src/index";
+```
+
+- import the scss to override the default theme in main.js (entry file) before you import the Draw component
+
+```js
+import "./demo.scss"
+```
+
+> variables
+
+**close button style**
+
+- \$--simple-drawer-softorange
+- \$--simple-drawer-tomatored
+- \$--simple-drawer-mediumblu
+
+**close button size**
+
+- \$--simple-drawer-close-width
+
+**drawer background**
+
+- \$--simple-drawer-bg-color
