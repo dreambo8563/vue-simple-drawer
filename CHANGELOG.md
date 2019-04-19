@@ -1,3 +1,13 @@
+<a name="1.0.4"></a>
+## [1.0.4](https://github.com/dreambo8563/vue-simple-drawer/compare/v1.0.2...v1.0.4) (2019-04-19)
+
+
+### Bug Fixes
+
+* **nest mask:** fix css issue ([2f9ede4](https://github.com/dreambo8563/vue-simple-drawer/commit/2f9ede4))
+
+
+
 <a name="1.0.2"></a>
 ## [1.0.2](https://github.com/dreambo8563/vue-simple-drawer/compare/v1.0.1...v1.0.2) (2019-04-18)
 
