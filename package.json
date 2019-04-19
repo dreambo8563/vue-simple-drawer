@@ -1,6 +1,6 @@
 {
   "name": "vue-simple-drawer",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "author": "dreambo8563",
   "main": "dist/vue-simple-drawer.umd.min.js",
   "private": false,

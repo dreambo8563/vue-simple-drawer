@@ -25,7 +25,7 @@
     <button @click="toggle">Open/Close</button>
     <Drawer
       :maskClosable="true"
-      :index="1002"
+      :zIndex="1002"
       @close="toggle"
       :align="align"
       :closeable="true"

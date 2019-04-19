@@ -51,7 +51,7 @@ export default {
       type: Boolean,
       default: false
     },
-    index: {
+    zIndex: {
       type: Number,
       default() {
         return this.simpleDrawerIndex;
@@ -60,7 +60,7 @@ export default {
   },
   provide() {
     return {
-      simpleDrawerIndex: this.zIndex + 1
+      simpleDrawerIndex: this.computedIndex + 1
     };
   },
   inject: {
@@ -78,7 +78,7 @@ export default {
     },
     indexCls(offset = 0) {
       return {
-        zIndex: this.zIndex + offset
+        zIndex: this.computedIndex + offset
       };
     }
   },
@@ -92,8 +92,8 @@ export default {
     alighCloseCls() {
       return `close-${this.align.toLowerCase()}`;
     },
-    zIndex() {
-      return this.index || this.simpleDrawerIndex;
+    computedIndex() {
+      return this.zIndex || this.simpleDrawerIndex;
     }
   }
 };
