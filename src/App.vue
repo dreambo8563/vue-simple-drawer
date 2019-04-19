@@ -2,34 +2,45 @@
   <div id="app">
     <div class="demo-container">
       <div>
-        <input type="radio" id="left" value="left" v-model="align">
+        <input type="radio" id="left" value="left" v-model="align" />
         <label for="left">left</label>
       </div>
 
       <div>
-        <input type="radio" id="right" value="right" v-model="align">
+        <input type="radio" id="right" value="right" v-model="align" />
         <label for="right">right</label>
       </div>
 
       <div>
-        <input type="radio" id="up" value="up" v-model="align">
+        <input type="radio" id="up" value="up" v-model="align" />
         <label for="up">up</label>
       </div>
 
       <div>
-        <input type="radio" id="down" value="down" v-model="align">
+        <input type="radio" id="down" value="down" v-model="align" />
         <label for="down">down</label>
       </div>
     </div>
 
     <button @click="toggle">Open/Close</button>
-    <Drawer :maskClosable="true" :zIndex="1002" @close="toggle" :align="align" :closeable="true">
+    <Drawer
+      :maskClosable="true"
+      :zIndex="1002"
+      @close="toggle"
+      :align="align"
+      :closeable="true"
+    >
       <div v-if="open">
         <span @click="clickContent">
           content here content here content here content here content here
           content here content here
         </span>
-        <Drawer :maskClosable="true" @close="innerOpen = false" :align="align" :closeable="true">
+        <Drawer
+          :maskClosable="true"
+          @close="innerOpen = false"
+          :align="align"
+          :closeable="true"
+        >
           <div v-if="innerOpen">content here content here content here</div>
         </Drawer>
       </div>
@@ -61,7 +72,7 @@ export default {
     }
   },
   watch: {
-    align: function () {
+    align: function() {
       this.open = false;
     }
   }
