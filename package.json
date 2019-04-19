@@ -8,7 +8,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib --name vue-simple-drawer src/index.js",
-    "test": "vue-cli-service build --target lib --name vue-simple-drawer src/index.js",
+    "test": "vue-cli-service test:unit",
     "pages": "vue-cli-service build --dest docs",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit",
