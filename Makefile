@@ -4,7 +4,7 @@ local:
 	npm run serve
 build:
 	npm run build
-doc:
+docs:
 	npm run pages
 report:
 	npm run report

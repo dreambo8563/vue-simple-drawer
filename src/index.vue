@@ -1,17 +1,9 @@
 <template>
   <div>
     <transition name="fade" mode="out-in">
-      <div
-        :style="indexCls()"
-        @click="onMask"
-        v-if="$slots.default"
-        :class="{ mask }"
-      ></div>
+      <div :style="indexCls()" @click="onMask" v-if="$slots.default" :class="{ mask }"></div>
     </transition>
-    <transition
-      :enter-active-class="alignInCls"
-      :leave-active-class="alignOutCls"
-    >
+    <transition :enter-active-class="alignInCls" :leave-active-class="alignOutCls">
       <div
         key="content"
         :class="{ closeable, [align.toLowerCase()]: true }"
@@ -34,7 +26,7 @@ export default {
     align: {
       type: String,
       default: "right",
-      validator: function(value) {
+      validator: function (value) {
         // The value must match one of these strings
         return ["left", "up", "right", "down"].indexOf(value) !== -1;
       }
@@ -51,7 +43,7 @@ export default {
       type: Boolean,
       default: false
     },
-    index: {
+    zIndex: {
       type: Number,
       default() {
         return this.simpleDrawerIndex;
@@ -60,7 +52,7 @@ export default {
   },
   provide() {
     return {
-      simpleDrawerIndex: this.zIndex + 1
+      simpleDrawerIndex: this.computedIndex + 1
     };
   },
   inject: {
@@ -78,7 +70,7 @@ export default {
     },
     indexCls(offset = 0) {
       return {
-        zIndex: this.zIndex + offset
+        zIndex: this.computedIndex + offset
       };
     }
   },
@@ -92,8 +84,8 @@ export default {
     alighCloseCls() {
       return `close-${this.align.toLowerCase()}`;
     },
-    zIndex() {
-      return this.index || this.simpleDrawerIndex;
+    computedIndex() {
+      return this.zIndex || this.simpleDrawerIndex;
     }
   }
 };

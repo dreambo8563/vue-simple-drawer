@@ -56,12 +56,13 @@ export default {
 
 ### Prop Types
 
-| Property     | Type    | Required? | Description                                                                           |
-| :----------- | :------ | :-------- | :------------------------------------------------------------------------------------ |
-| align        | String  |           | One of "left", "up", "right", "down", default is 'right'. the location of the drawer. |
-| closeable    | Boolean |           | show the x - close button, default true                                               |
-| mask         | Boolean |           | show the mask layer - close button, default true                                      |
-| maskClosable | Boolean |           | emit 'close' event when click on mask layer, default: false                           |
+| Property     | Type    | Required? | Description                                                                                              |
+| :----------- | :------ | :-------- | :------------------------------------------------------------------------------------------------------- |
+| align        | String  |           | One of "left", "up", "right", "down", default is 'right'. the location of the drawer.                    |
+| closeable    | Boolean |           | show the x - close button, default true                                                                  |
+| mask         | Boolean |           | show the mask layer - close button, default true                                                         |
+| maskClosable | Boolean |           | emit 'close' event when click on mask layer, default: false                                              |
+| zIndex       | Number  |           | z-index value for the drawer, the nest drawer's z-index will be increased automatically, default is 1000 |
 
 ### Events
 
