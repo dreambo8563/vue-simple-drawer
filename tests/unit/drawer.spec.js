@@ -1,5 +1,5 @@
 import { shallowMount } from "@vue/test-utils";
-import Drawer from "@/index.vue";
+import Drawer from "../../src/index.vue";
 
 describe("Drawer.vue", () => {
   it("renders props.align when passed", () => {
