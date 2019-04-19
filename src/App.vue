@@ -23,16 +23,25 @@
     </div>
 
     <button @click="toggle">Open/Close</button>
-    <Drawer @close="toggle" :align="align" :closeable="true">
+    <Drawer
+      :maskClosable="true"
+      :index="1002"
+      @close="toggle"
+      :align="align"
+      :closeable="true"
+    >
       <div v-if="open">
-        <span @click="innerOpen = true">
+        <span @click="clickContent">
           content here content here content here content here content here
           content here content here
         </span>
-        <Drawer @close="innerOpen = false" :align="align" :closeable="true">
-          <div v-if="innerOpen">
-            content here content here content here
-          </div>
+        <Drawer
+          :maskClosable="true"
+          @close="innerOpen = false"
+          :align="align"
+          :closeable="true"
+        >
+          <div v-if="innerOpen">content here content here content here</div>
         </Drawer>
       </div>
     </Drawer>
@@ -57,6 +66,10 @@ export default {
   methods: {
     toggle() {
       this.open = !this.open;
+    },
+    clickContent() {
+      console.log("clickContent");
+      this.innerOpen = true;
     }
   },
   watch: {

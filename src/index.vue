@@ -1,5 +1,13 @@
 <template>
   <div>
+    <transition name="fade" mode="out-in">
+      <div
+        :style="indexCls()"
+        @click="onMask"
+        v-if="$slots.default"
+        :class="{ mask }"
+      ></div>
+    </transition>
     <transition
       :enter-active-class="alignInCls"
       :leave-active-class="alignOutCls"
@@ -9,16 +17,14 @@
         :class="{ closeable, [align.toLowerCase()]: true }"
         v-if="$slots.default"
         class="vue-simple-drawer cover"
+        :style="indexCls()"
       >
-        <div @click="close" v-if="closeable" class="close-btn">
+        <div @click.stop="close" v-if="closeable" class="close-btn">
           <div class="leftright"></div>
           <div class="rightleft"></div>
         </div>
         <slot></slot>
       </div>
-    </transition>
-    <transition name="fade" mode="out-in">
-      <div @click="onMask" v-if="$slots.default" :class="{ mask }"></div>
     </transition>
   </div>
 </template>
@@ -44,8 +50,23 @@ export default {
     maskClosable: {
       type: Boolean,
       default: false
+    },
+    index: {
+      type: Number,
+      default() {
+        return this.simpleDrawerIndex;
+      }
     }
   },
+  provide() {
+    return {
+      simpleDrawerIndex: this.zIndex + 1
+    };
+  },
+  inject: {
+    simpleDrawerIndex: { default: 1000 }
+  },
+
   methods: {
     close() {
       this.$emit("close");
@@ -54,6 +75,11 @@ export default {
       if (this.maskClosable) {
         this.close();
       }
+    },
+    indexCls(offset = 0) {
+      return {
+        zIndex: this.zIndex + offset
+      };
     }
   },
   computed: {
@@ -65,6 +91,9 @@ export default {
     },
     alighCloseCls() {
       return `close-${this.align.toLowerCase()}`;
+    },
+    zIndex() {
+      return this.index || this.simpleDrawerIndex;
     }
   }
 };
