@@ -68,7 +68,6 @@ export default {
       this.open = !this.open;
     },
     clickContent() {
-      console.log("clickContent");
       this.innerOpen = true;
     }
   },
