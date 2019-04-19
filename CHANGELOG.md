@@ -1,3 +1,8 @@
+<a name="1.0.5"></a>
+## [1.0.5](https://github.com/dreambo8563/vue-simple-drawer/compare/v1.0.4...v1.0.5) (2019-04-19)
+
+
+
 <a name="1.0.4"></a>
 ## [1.0.4](https://github.com/dreambo8563/vue-simple-drawer/compare/v1.0.2...v1.0.4) (2019-04-19)
 
