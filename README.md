@@ -1,4 +1,5 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/49b0de032f6a4a9bb212a7ad07cf95d7)](https://app.codacy.com/app/dreambo8563/vue-simple-drawer?utm_source=github.com&utm_medium=referral&utm_content=dreambo8563/vue-simple-drawer&utm_campaign=Badge_Grade_Settings)
+[![codecov](https://codecov.io/gh/dreambo8563/vue-simple-drawer/branch/master/graph/badge.svg)](https://codecov.io/gh/dreambo8563/vue-simple-drawer)
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 [![Build Status](https://travis-ci.org/dreambo8563/vue-simple-drawer.svg?branch=master)](https://travis-ci.org/dreambo8563/vue-simple-drawer) [![Greenkeeper badge](https://badges.greenkeeper.io/dreambo8563/vue-simple-drawer.svg)](https://greenkeeper.io/)
 [![Known Vulnerabilities](https://snyk.io/test/github/dreambo8563/vue-simple-drawer/badge.svg?targetFile=package.json)](https://snyk.io/test/github/dreambo8563/vue-simple-drawer?targetFile=package.json)
