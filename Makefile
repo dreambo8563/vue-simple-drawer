@@ -8,3 +8,5 @@ docs:
 	npm run pages
 report:
 	npm run report
+test:
+	npm run test
