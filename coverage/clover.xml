@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1555942495707" clover="3.2.0">
+  <project timestamp="1555942495707" name="All files">
+    <metrics statements="17" coveredstatements="11" conditionals="5" coveredconditionals="4" methods="2" coveredmethods="1" elements="24" coveredelements="16" complexity="0" loc="17" ncloc="17" packages="1" files="2" classes="2">
+      <file name="App.vue" path="/Users/vincent/Documents/Vincent/vue-simple-drawer/src/App.vue">
+        <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="52" count="0" type="stmt"/>
+        <line num="53" count="0" type="stmt"/>
+        <line num="57" count="0" type="stmt"/>
+        <line num="68" count="0" type="stmt"/>
+        <line num="71" count="0" type="stmt"/>
+        <line num="76" count="0" type="stmt"/>
+      </file>
+      <file name="index.vue" path="/Users/vincent/Documents/Vincent/vue-simple-drawer/src/index.vue">
+        <metrics statements="11" coveredstatements="11" conditionals="5" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="39" count="8" type="stmt"/>
+        <line num="57" count="7" type="stmt"/>
+        <line num="62" count="8" type="stmt"/>
+        <line num="72" count="2" type="stmt"/>
+        <line num="75" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="76" count="1" type="stmt"/>
+        <line num="80" count="16" type="stmt"/>
+        <line num="87" count="8" type="stmt"/>
+        <line num="90" count="8" type="stmt"/>
+        <line num="93" count="1" type="stmt"/>
+        <line num="96" count="8" type="cond" truecount="1" falsecount="1"/>
+      </file>
+    </metrics>
+  </project>
+</coverage>
