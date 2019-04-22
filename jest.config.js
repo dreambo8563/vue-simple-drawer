@@ -1,7 +1,7 @@
 module.exports = {
   collectCoverage: true,
   collectCoverageFrom: [
-    "src/**/*.{vue}",
+    "src/index.{vue}",
     "src/**/*.{ts}",
     "!**/node_modules/**",
     "!**/vendor/**"
