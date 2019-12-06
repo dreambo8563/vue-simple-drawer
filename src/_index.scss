@@ -4,7 +4,7 @@
 .vue-simple-drawer {
   // default style
   padding: 20px;
-  color: white;
+  color: $--simple-drawer-fg-color;
   background: $--simple-drawer-bg-color;
   // common
   position: fixed;

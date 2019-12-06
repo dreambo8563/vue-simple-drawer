@@ -124,10 +124,10 @@ $--simple-drawer-close-width: 50px;
 @import "~vue-simple-drawer/src/index";
 ```
 
-- import the scss to override the default theme in main.js (entry file) before you import the Draw component
+- import the scss to override the default theme in main.js (entry file) **after** you import the Draw component
 
 ```js
-import "./demo.scss"
+import "./demo.scss";
 ```
 
 > variables
