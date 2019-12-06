@@ -146,6 +146,10 @@ import "./demo.scss";
 
 - \$--simple-drawer-bg-color
 
+**drawer text color**
+
+- \$--simple-drawer-fg-color
+
 ## License
 
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fdreambo8563%2Fvue-simple-drawer.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fdreambo8563%2Fvue-simple-drawer?ref=badge_large)
