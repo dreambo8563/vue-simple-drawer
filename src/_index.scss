@@ -59,7 +59,7 @@
       height: 4px;
       width: $--simple-drawer-close-width;
       position: absolute;
-      margin-top: $--simple-drawer-close-width/2;
+      margin-top: calc($--simple-drawer-close-width/2);
       background-color: $--simple-drawer-softorange;
       border-radius: 2px;
       transform: rotate(45deg);
@@ -70,7 +70,7 @@
       height: 4px;
       width: $--simple-drawer-close-width;
       position: absolute;
-      margin-top: $--simple-drawer-close-width/2;
+      margin-top: calc($--simple-drawer-close-width/2);
       background-color: $--simple-drawer-softorange;
       border-radius: 2px;
       transform: rotate(-45deg);
